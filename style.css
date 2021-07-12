@@ -1,0 +1,223 @@
+body, h1, p, div, span, img {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Kumbh Sans;
+  font-size: 1.125rem;
+  z-index: 5;
+}
+
+h1 {
+  font-weight: bold;
+  display: inline;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #19A1AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.circle-container {
+  width: 21.875rem;
+  height: 23.375rem;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+          box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+}
+
+.circle-top {
+  position: absolute;
+  width: 61.125rem;
+  height: 61rem;
+  left: -49rem;
+  top: -46.8125rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.8%, rgba(9, 137, 180, 0.0001)), color-stop(150%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 27.8%, #53FFEE 150%);
+  opacity: 0.5;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-bottom {
+  position: absolute;
+  width: 61.125rem;
+  height: 61rem;
+  left: 9.875rem;
+  top: 14.3125rem;
+  border-radius: 77%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49.78%, rgba(9, 137, 180, 0.0001)), color-stop(96.94%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  -webkit-transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+          transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  z-index: -1;
+}
+
+.color {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 8.75rem;
+  background-color: #41CBD3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.color .skew-1 {
+  margin-right: 1rem;
+  position: absolute;
+  top: 0px;
+  left: -3rem;
+  width: 10%;
+  height: 100%;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+
+.color .skew-1 div {
+  width: 1.85438rem;
+  height: 1.85rem;
+  border-radius: 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-64.22%, #0989b4), color-stop(103.94%, #53FFEE));
+  background: linear-gradient(180deg, #0989b4 -64.22%, #53FFEE 103.94%);
+  opacity: 0.5;
+  margin-top: -0.28125rem;
+}
+
+.color .skew {
+  margin-right: 1rem;
+  width: 10%;
+  height: 100%;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+
+.color .skew div {
+  width: 1.85438rem;
+  height: 1.85rem;
+  border-radius: 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  opacity: 0.5;
+  margin-top: -0.40625rem;
+}
+
+.bio {
+  height: 9.0625rem;
+  border-bottom: 1px solid #E8E9EC;
+  text-align: center;
+  padding-top: 4.5rem;
+  position: relative;
+}
+
+.bio p {
+  font-size: 0.875rem;
+  margin-top: 0.8125rem;
+}
+
+.bio .avatar {
+  position: absolute;
+  top: -3.125rem;
+  left: 7.9375rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100px;
+  border: 4px solid white;
+  overflow: hidden;
+}
+
+.bio img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gradient-right {
+  background: -webkit-gradient(linear, left top, right top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+  background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+
+.gradient-left {
+  background: -webkit-gradient(linear, right top, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+  background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+
+.gradient-top {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+  background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+
+.gradient-bottom {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+
+.numbers {
+  border: 1px solid #E8E9EC;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.numbers div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbers div span {
+  font-size: 0.625rem;
+  color: #2E3349;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5625rem;
+}
+
+.numbers div p {
+  font-size: 1.125rem;
+  color: #2E3349;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

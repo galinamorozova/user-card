@@ -1,0 +1,196 @@
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+body, h1, p, div, span, img {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans;
+    font-size: toRem(18);
+    z-index: 5;
+}
+
+h1 {
+    font-weight: bold;
+    display: inline;
+    
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    background: #19A1AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.circle-container {
+    width: toRem(350);
+    height: toRem(374);
+    position: relative;
+}
+.card {
+    
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+}
+
+.circle-top {
+    position: absolute;
+    width: toRem(978);
+    height: toRem(976);
+    left: -49rem;
+    top: -46.8125rem;
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 27.8%, #53FFEE 150%);
+    opacity: 0.5;
+    transform: rotate(-135deg);
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    z-index: -1;
+ }
+ .circle-bottom {
+    position: absolute;
+    width: toRem(978);
+    height: toRem(976);
+    left: 9.875rem;
+    top: 14.3125rem;
+    border-radius: 77%;
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+    z-index: -1;
+}
+.color {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        height: toRem(140);
+        background-color: #41CBD3;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        position: relative;
+        overflow: hidden;
+
+       .skew-1 {
+        margin-right: toRem(16);
+        position: absolute;
+        top: 0px;
+        left: toRem(-48);
+        width: 10%;
+        height: 100%;
+        transform: skewX(45deg);
+
+        div {
+            width: toRem(29.67);
+            height: toRem(29.6);   
+            border-radius: 100%;   
+            transform: skewX(-45deg); 
+            background: linear-gradient(180deg, rgba(9, 137, 180, 20.0001) -64.22%, #53FFEE 103.94%);    
+            opacity: 0.5;
+            margin-top: toRem(-4.5);
+        }
+    }
+
+        .skew {
+            
+            margin-right: toRem(16);
+            width: 10%;
+            height: 100%;
+            transform: skewX(45deg);
+            
+
+            div {
+                width: toRem(29.67);
+                height: toRem(29.6);   
+                border-radius: 100%;   
+                transform: skewX(-45deg);     
+                opacity: 0.5;
+                margin-top: toRem(-6.5);
+            }
+        }
+    }
+
+.bio {
+    
+    height: toRem(145);
+    border-bottom: 1px solid #E8E9EC;
+    text-align: center;
+    padding-top: toRem(72);
+    position: relative;
+
+    p {
+        font-size: toRem(14);
+        margin-top: toRem(13);
+    }
+
+    .avatar {
+        position: absolute;
+        top: toRem(-50);
+        left: toRem(127);
+        width: toRem(96);
+        height: toRem(96);
+        border-radius: 100px;
+        border: 4px solid white;
+        overflow: hidden;
+    }
+
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        }
+}
+
+.gradient-right {
+    background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+.gradient-left {
+    background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+.gradient-top {
+    background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+.gradient-bottom {
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+}
+   
+
+.numbers {
+    border: 1px solid #E8E9EC;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-size: toRem(10);
+            color: #2E3349;
+            margin-bottom: toRem(24);
+            margin-top: toRem(9);
+        }
+        p {
+            font-size: toRem(18);
+            color: #2E3349;
+            font-weight: bold;
+            margin-top: toRem(24);
+        }
+    }
+}
+
+
