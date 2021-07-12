@@ -51,8 +51,8 @@ h1 {
   height: 61rem;
   left: -49rem;
   top: -46.8125rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.8%, rgba(9, 137, 180, 0.0001)), color-stop(150%, #53FFEE));
-  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 27.8%, #53FFEE 150%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
   opacity: 0.5;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
@@ -68,8 +68,8 @@ h1 {
   left: 9.875rem;
   top: 14.3125rem;
   border-radius: 77%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(49.78%, rgba(9, 137, 180, 0.0001)), color-stop(96.94%, #53FFEE));
-  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
   mix-blend-mode: normal;
   opacity: 0.25;
   -webkit-transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
@@ -164,23 +164,46 @@ h1 {
 }
 
 .gradient-right {
-  background: -webkit-gradient(linear, left top, right top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
-  background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 
 .gradient-left {
-  background: -webkit-gradient(linear, right top, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
-  background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 
 .gradient-top {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
-  background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 
 .gradient-bottom {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
-  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.78%, rgba(9, 137, 180, 0.0001)), color-stop(99.94%, #53FFEE));
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .gradient-right {
+    background: -webkit-gradient(linear, left top, right top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+    background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  }
+  .gradient-left {
+    background: -webkit-gradient(linear, right top, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+    background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  }
+  .gradient-top {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+    background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  }
+  .gradient-bottom {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(52.8%, rgba(9, 137, 180, 0.0001)), color-stop(118%, #53FFEE));
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+  }
+  .circle-top, .circle-bottom {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(49.78%, rgba(9, 137, 180, 0.0001)), color-stop(96.94%, #53FFEE));
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+  }
 }
 
 .numbers {

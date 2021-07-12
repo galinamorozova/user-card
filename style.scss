@@ -50,13 +50,14 @@ h1 {
     height: toRem(976);
     left: -49rem;
     top: -46.8125rem;
-    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 27.8%, #53FFEE 150%);
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
     opacity: 0.5;
     transform: rotate(-135deg);
     mix-blend-mode: normal;
     border-radius: 50%;
     z-index: -1;
  }
+ 
  .circle-bottom {
     position: absolute;
     width: toRem(978);
@@ -64,7 +65,7 @@ h1 {
     left: 9.875rem;
     top: 14.3125rem;
     border-radius: 77%;
-    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
     mix-blend-mode: normal;
     opacity: 0.25;
     transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
@@ -152,17 +153,36 @@ h1 {
 }
 
 .gradient-right {
-    background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 .gradient-left {
-    background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 .gradient-top {
-    background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
 .gradient-bottom {
-    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
 }
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .gradient-right {
+        background: linear-gradient(90deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    }
+    .gradient-left {
+        background: linear-gradient(270deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    }
+    .gradient-top {
+        background: linear-gradient(360deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    }
+    .gradient-bottom {
+        background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 52.8%, #53FFEE 118%);
+    }
+
+    .circle-top, .circle-bottom {
+        background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 49.78%, #53FFEE 96.94%);
+        }
+    }
+    
    
 
 .numbers {
